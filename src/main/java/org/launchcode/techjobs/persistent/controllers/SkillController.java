@@ -25,7 +25,7 @@ public class SkillController {
     public String index (Model model){
         List skills = (List<Skill>) skillRepository.findAll();
         model.addAttribute("skills", skills);
-        model.addAttribute("title", "All Skills");
+//        model.addAttribute("title", "All Skills");
         return "skills/index";
     }
 
